@@ -18,11 +18,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    // Button to switch between light modes
     @IBAction func buttonPressed(_ sender: Any) {
         lightOn = !lightOn
         updateUI()
     }
     
+    // Switches between light modes
     func updateUI(){
         view.backgroundColor = lightOn ? .white : .black
     }
