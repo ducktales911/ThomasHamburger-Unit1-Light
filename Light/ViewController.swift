@@ -17,13 +17,13 @@ class ViewController: UIViewController {
         updateUI()
     }
 
-    // Button to switch between light modes
+    // Button to switch between light modes.
     @IBAction func buttonPressed(_ sender: Any) {
         lightOn = !lightOn
         updateUI()
     }
 
-    // Switches between light modes
+    // Switches between light modes.
     func updateUI() {
         view.backgroundColor = lightOn ? .white : .black
     }
